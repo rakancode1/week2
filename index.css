@@ -47,13 +47,32 @@ body{
   background: none;
 }
 .text>h1{
-  color: rgb(6, 81, 21);
+  color: rgb(0, 0, 0);
   background: none;
+  letter-spacing: -5px;
+  animation: h1 5.5s ;
+  animation-delay: 0.7s;
+}
+@keyframes h1 {
+  0%{
+    opacity: 1;
+    letter-spacing: 0;
+    translate: 0px 0px;
+  }50%{
+    opacity: 0;
+    letter-spacing: 15px;
+    translate: 50% 0px;
+  }100%{
+    opacity: 1;
+    letter-spacing: 0;
+    translate: 0px 0px;
+  }
 }
 .text>p{
   font-family: sans-serif;
   color:  rgb(6, 81, 21);
-  background: none;
+  background: wheat;
+  padding: 0px 10px;
 }
 
 
@@ -63,21 +82,23 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-
+  gap: 10px;
   overflow: hidden;
 }
 #middil>.text{
-  width: 100%;
+  width: 92%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background:wheat;
+
 }
 #middil>.text>h3{
   width: 100%;
   text-align: center;
-  color: white;
+  color: rgb(6, 81, 21);
   font-family: sans-serif;;
   padding: 5px;
 }
@@ -101,6 +122,35 @@ body{
   align-items: center;
   flex-direction: column;
 }
+#project_div>.sss{
+  animation: sss 0.7s infinite;
+}
+@keyframes sss {
+  0%{
+    opacity: 1;
+  }50%{
+    opacity: 0.6;
+  }100%{
+    opacity: 1;
+  }
+}
+.price{
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: row;
+}
+.price>.old_price{
+  font-family: sans-serif;
+  font-size: 10px;
+  text-decoration: line-through;
+}
+.price>.new_price{
+  font-family: sans-serif;
+
+}
 #project_div>.item>p{
   width: 100%;
   text-align: center;
@@ -112,14 +162,28 @@ body{
   background: none;
 }
 #foteer{
+  margin-top: 15px;
   width: 100%;
-  padding: 15px;
+  padding: 25px;
   height: fit-content;
   background: wheat;
   display: flex;
   justify-content: center;
   justify-items: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.socialmidia{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.socialmidia>a>img{
+  width: 30px;
 }
 @media (min-width:650px) {
   body{
