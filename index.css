@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+*{
+    font-family: "Edu NSW ACT Cursive", "cursive";
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background:  rgb(6, 81, 21);
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+#head{
+  height: 90vh;
+  width: 100%;
+  background: url(img/UP_D9mi9.jpeg)no-repeat ;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+#logo_menu_div{
+  padding:0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+}
+#logo_menu_div>img{
+  background: none;
+}
+.text{
+  width: 100%;
+  text-align: start;
+  padding: 35px 15px;
+  background: none;
+}
+.text>h1{
+  color: rgb(6, 81, 21);
+  background: none;
+}
+.text>p{
+  font-family: sans-serif;
+  color:  rgb(6, 81, 21);
+  background: none;
+}
+
+
+
+#middil{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+#middil>.text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#middil>.text>h3{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;;
+  padding: 5px;
+}
+#project_div{
+  width: 100%;
+  background: none;
+  height: 80%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#project_div>.item{
+  background: rgba(255, 255, 255, 0.737);
+  width: 45%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#project_div>.item>p{
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+#project_div>.item>img{
+  width: 75%;
+  background: none;
+}
+#foteer{
+  width: 100%;
+  padding: 15px;
+  height: fit-content;
+  background: wheat;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+}
