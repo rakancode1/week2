@@ -121,3 +121,8 @@ body{
   justify-items: center;
   flex-direction: row;
 }
+@media (min-width:650px) {
+  body{
+    display: none;
+  }
+}
